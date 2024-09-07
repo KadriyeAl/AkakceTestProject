@@ -2,6 +2,7 @@ package src.Utilty;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.Duration;
 
@@ -11,7 +12,7 @@ public class BaseDriverFireFox {
     //bunun sarti extends olmasi ve basta yer almasi
     static // tearStart()
     {
-        driverFireFox=new ChromeDriver();
+        driverFireFox=new FirefoxDriver();
 
         //driver.manage().window().maximize(); // Ekranı max yapıyor.
         driverFireFox.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20)); // 20 sn mühlet: sayfayı yükleme mühleti
